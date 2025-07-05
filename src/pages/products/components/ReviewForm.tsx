@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+import  { useState } from "react";
+import {  Row, Col, Card, Form, Button } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
-import ProductSection from "../../home/product/ProductSection";
 import ProductCard from "../../../components/ProductCard";
 
 const ReviewForm = () => {
@@ -15,7 +14,7 @@ const ReviewForm = () => {
     email: "",
   });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     console.log({ ...formData, rating });
   };
@@ -43,7 +42,6 @@ const ReviewForm = () => {
                     style={{ cursor: "pointer", marginRight: 5 }}
                     color={value <= (hover || rating) ? "#ffc107" : "#e4e5e9"}
                     onClick={() => setRating(value)}
-                    onMouseEnter={() => setHover(value)}
                     onMouseLeave={() => setHover(null)}
                   />
                 );
