@@ -41,7 +41,7 @@ export default function Header() {
                 </li>
                 <li>
 
-                <NavLink className={"nav-link"} to="/contact">Contact Us</NavLink>
+                <NavLink className={"nav-link"} to="/contact" onClick={handleClose}>Contact Us</NavLink>
                 </li>
               </Nav>
               
