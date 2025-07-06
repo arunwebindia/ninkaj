@@ -1,5 +1,5 @@
 // components/Header.tsx
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Navbar, Nav, Container, Offcanvas, Button } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 
